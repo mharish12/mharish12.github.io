@@ -1,4 +1,507 @@
 <!DOCTYPE html>
-<div>
-    <p>Hello world</p>
-</div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harish Madineni - Resume</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        line-height: 1.6;
+        color: #333;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f5f5f5;
+      }
+
+      .resume {
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .header h1 {
+        color: #2c3e50;
+        font-size: 2.5em;
+        margin-bottom: 10px;
+      }
+
+      .contact-info {
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .section {
+        margin-bottom: 30px;
+      }
+
+      .section-title {
+        color: #2c3e50;
+        border-bottom: 2px solid #3498db;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+      }
+
+      .experience-item,
+      .education-item {
+        margin-bottom: 20px;
+      }
+
+      .experience-item h3,
+      .education-item h3 {
+        color: #2c3e50;
+      }
+
+      .date {
+        color: #666;
+        font-style: italic;
+      }
+
+      .skills-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .skill {
+        background-color: #3498db;
+        color: white;
+        padding: 5px 15px;
+        border-radius: 15px;
+        font-size: 0.9em;
+      }
+
+      .skill-category {
+        margin-bottom: 20px;
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 10px;
+        }
+
+        .resume {
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="resume">
+      <div class="header">
+        <h1>Harish Madineni</h1>
+        <div class="contact-info">
+          <p>
+            📍 Bengaluru, India | 📧
+            <a href="mailto:harishmadineni1@gmail.com"
+              >harishmadineni1@gmail.com</a
+            >
+            | 📱 <a href="tel:+918106889667">+918106889667</a> | 💼
+            <a href="https://www.linkedin.com/in/mharish12/">LinkedIn</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Professional Summary</h2>
+        <p>
+          Results-oriented Java Developer with 3.5+ years of experience in
+          backend development. Skilled in designing, implementing, and
+          maintaining Java applications, with a strong focus on scalability,
+          performance, and reliability. Proficient in various Java frameworks
+          and technologies, including Spring Boot, Hibernate, Apache Storm,
+          Maven and Gradle. Adept at collaborating with cross-functional teams
+          to deliver high-quality software solutions.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-item">
+          <h3>Software Engineer</h3>
+          <p class="date">Birla Pivot | July, 2024 - Present</p>
+          <ul>
+            <li>
+              Developed Logistics RFQ (Request for Quotation) workflows,
+              automating vendor selection, price negotiation, and quotation
+              tracking to streamline logistics operations.
+            </li>
+            <li>
+              Designed and implemented Sales Pipeline features, increasing lead
+              conversion rate by 60% and reducing sales cycle time by 50%.
+            </li>
+            <li>
+              Architected and developed 5+ microservices using Java and Spring
+              Boot, resulting in 40% faster deployment cycles and improved
+              system maintainability.
+            </li>
+            <li>
+              Optimized backend performance through code refactoring and caching
+              strategies, reducing API response times from 800ms to 120ms (85%
+              improvement).
+            </li>
+            <li>
+              Implemented Spring State Machine for product lifecycle management,
+              reducing state transition errors by 95% and improving system
+              reliability.
+            </li>
+            <li>
+              Designed and optimized database schemas for 3 critical services,
+              achieving 99.9% uptime and reducing query latency by 60%.
+            </li>
+            <li>
+              Worked on AWS services, RDS, EKS, Jaeger and Kibana, Jenkins.
+            </li>
+            <li>
+              Collaborated with cross-functional teams to enhance e-commerce
+              platform features.
+            </li>
+            <li>
+              Resolved production issues quickly, ensuring minimal downtime and
+              smooth operations.
+            </li>
+            <li>
+              Implemented event-driven architecture using Kafka, processing
+              10,000+ events per second with 99.99% reliability.
+            </li>
+            <li>
+              Monitored and debugged distributed systems using Jaeger and
+              Kibana, enhancing observability and troubleshooting.
+            </li>
+            <li>
+              Developed and documented REST APIs with comprehensive Swagger
+              documentation, improving developer onboarding time by 40%.
+            </li>
+            <li>
+              Integrated REST APIs with React frontend for real-time data
+              updates.
+            </li>
+            <li>
+              Mentored junior developers, guiding them in best practices for
+              coding, architecture, and system design.
+            </li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h3>Senior Software Development Engineer</h3>
+          <p class="date">Zopsmart | April, 2024 - July, 2024</p>
+          <ul>
+            <li>
+              Led a team of 8 developers, delivering 3 major features ahead of
+              schedule with 95% test coverage and zero critical bugs.
+            </li>
+            <li>
+              Architected and implemented Apache Storm Orchestrator pipeline
+              processing 100M+ records daily with 99.99% uptime.
+            </li>
+            <li>
+              Implemented critical code changes and added new functionalities to
+              enhance the existing applications, ensuring the reliability and
+              robustness of the applications.
+            </li>
+            <li>
+              Conducted bi-weekly client meetings, translating business
+              requirements into technical specifications with 100% stakeholder
+              satisfaction.
+            </li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h3>Software Development Engineer Level - 2</h3>
+          <p class="date">Zopsmart | September, 2022 - April, 2024</p>
+          <ul>
+            <li>
+              Achieved Employee of the Month (December 2022) for exceptional
+              performance in system optimization and team leadership.
+            </li>
+            <li>
+              Led a team of 7 developers in retail environment (Kroger),
+              delivering major releases with 99.9% uptime and zero critical
+              incidents.
+            </li>
+            <li>
+              Implemented Domain Driven Architecture processing 10M+ records
+              daily from Azure Eventhubs, improving data consistency by 99.9%.
+            </li>
+            <li>
+              Leveraged Apache Storm Orchestrator, YugaByte Cassandra, Circuit
+              Breaker, RESTful web services, Apache Kafka, Prometheus, K8s
+              technologies.
+            </li>
+            <li>
+              Responsibilities includes Identifying and addressing areas of
+              improvement in code quality and performance and worked in an Agile
+              development environment, Production support, Bug fixes, Code
+              reviews, contributing to sprint planning, daily scrums, and
+              retrospective meetings.
+            </li>
+          </ul>
+        </div>
+        <div class="experience-item">
+          <h3>Software Development Engineer</h3>
+          <p class="date">Zopsmart | FEBRUARY, 2022 - September, 2022</p>
+          <ul>
+            <li>
+              Developed Rocket Java framework reducing development time by 50%
+              through pre-configured best practices and reusable components.
+              Feature include Centralized Logging, Authorization and
+              Authentication, Constraint Validations, Dependency Injection,
+              Parameter validations, Configurations, Prometheus Metrics, and
+              CRUD operations for Google Cloud file uploads.
+            </li>
+            <li>
+              Achieved 95% code coverage with hundreds of unit test cases,
+              reducing production bugs by 90% and improving system reliability.
+            </li>
+            <li>
+              Reduced deployment time by 70% through implementation of automated
+              semantic versioning and release pipelines.
+            </li>
+            <li>
+              Improved framework adoption rate by 200% through comprehensive
+              documentation and developer training sessions.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+          <h3>BACHELOR OF TECHNOLOGY IN COMPUTER SCIENCE AND ENGINEERING</h3>
+          <p class="date">
+            SREE VIDYANIKETHAN ENGINEERING COLLEGE | 2018 - 2022
+          </p>
+          <p>CGPA: 8.12</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Languages</h4>
+            <div class="skills-list">
+              <span class="skill">Java</span>
+              <span class="skill">Python</span>
+              <span class="skill">Go Lang</span>
+              <span class="skill">C</span>
+              <span class="skill">C++</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Databases</h4>
+            <div class="skills-list">
+              <span class="skill">Cassandra</span>
+              <span class="skill">Postgres</span>
+              <span class="skill">MySQL</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Cloud Platforms</h4>
+            <div class="skills-list">
+              <span class="skill">Azure</span>
+              <span class="skill">AWS</span>
+              <span class="skill">GCP</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Tools & Technologies</h4>
+            <div class="skills-list">
+              <span class="skill">Apache Storm</span>
+              <span class="skill">Apache Kafka</span>
+              <span class="skill">Apache Spark</span>
+              <span class="skill">Apache Flink</span>
+              <span class="skill">Databricks</span>
+              <span class="skill">Prometheus</span>
+              <span class="skill">DropWizard</span>
+              <span class="skill">Kubernetes</span>
+              <span class="skill">Docker</span>
+              <span class="skill">Spring</span>
+              <span class="skill">Spring-Boot</span>
+              <span class="skill">Circuit-Breaker</span>
+              <span class="skill">Grafana</span>
+              <span class="skill">Dynatrace</span>
+              <span class="skill">Harness</span>
+              <span class="skill">Rancher</span>
+              <span class="skill">Snyk</span>
+              <span class="skill">Datalake</span>
+              <span class="skill">Datadog</span>
+              <span class="skill">Jfrog</span>
+              <span class="skill">Terraform</span>
+              <span class="skill">Sonar</span>
+              <span class="skill">Gradle</span>
+              <span class="skill">Maven</span>
+              <span class="skill">IntelliJ</span>
+              <span class="skill">Git</span>
+              <span class="skill">Jira</span>
+              <span class="skill">Service-Now</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Test Automation Tools</h4>
+            <div class="skills-list">
+              <span class="skill">Karate Framework</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-category">
+          <div class="project-item">
+            <h4>
+              Local Chat Application |
+              <a
+                href="https://github.com/mharish12/local-chat"
+                class="project-link"
+                >View Project
+              </a>
+            </h4>
+            <p>
+              A real-time chat application built with WebSocket technology
+              enabling instant messaging between users on local network.
+            </p>
+          </div>
+
+          <div class="project-item">
+            <h4>
+              Parking Lot Management System |
+              <a
+                href="https://github.com/hqtechnology/parking-lot-application"
+                class="project-link"
+                >View Project
+              </a>
+            </h4>
+            <p>
+              A comprehensive parking management solution with real-time space
+              tracking and automated billing.
+            </p>
+          </div>
+
+          <div class="project-item">
+            <h4>
+              Java Opinionated Framework |
+              <a href="https://github.com/mharish12/hqueue" class="project-link"
+                >View Project
+              </a>
+            </h4>
+            <p>
+              A custom framework designed to streamline Java development with
+              pre-configured best practices and patterns.
+            </p>
+          </div>
+
+          <div class="project-item">
+            <h4>
+              E-Commerce Platform |
+              <a
+                href="https://github.com/mharish12/spring-prac"
+                class="project-link"
+                >View Project
+              </a>
+            </h4>
+            <p>
+              Full-featured e-commerce solution with RESTful API endpoints for
+              product and cart management, implementing CRUD operations.
+            </p>
+          </div>
+
+          <div class="project-item">
+            <h4>
+              Pothole Detection System |
+              <a
+                href="https://ieeexplore.ieee.org/document/10010929"
+                class="project-link"
+                >View Project
+              </a>
+            </h4>
+            <p>
+              Machine learning-based solution for automated pothole detection
+              using computer vision techniques on digital camera inputs.
+            </p>
+          </div>
+
+          <div class="project-item">
+            <h4>
+              Sales Forecasting Model |
+              <a
+                href="https://github.com/mharish12/django_web_app"
+                class="project-link"
+                >View Project
+              </a>
+            </h4>
+            <p>
+              Django-based predictive analytics application utilizing logistic
+              regression for employee behavior analysis and sales forecasting.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Achievements & Certifications</h2>
+        <div class="experience-item">
+          <div class="achievement-item">
+            <h4>Logistics Feature Delivery Excellence</h4>
+            <p>
+              Recognized for ownership mindset and rapid delivery of critical
+              logistics functionality
+            </p>
+          </div>
+
+          <div class="achievement-item">
+            <h4>Pivot Polaris Performance Award</h4>
+            <p>
+              Honored for exceptional project execution and requirement analysis
+              (December 2022)
+            </p>
+          </div>
+
+          <div class="achievement-item">
+            <h4>EPAM Java Development Certification</h4>
+            <p>
+              Completed comprehensive Java development program (September 2020 -
+              June 2021)
+            </p>
+          </div>
+
+          <div class="achievement-item">
+            <h4>IEEE Research Publication</h4>
+            <p>
+              Published research paper on machine learning applications in
+              pothole detection
+            </p>
+          </div>
+
+          <div class="achievement-item">
+            <h4>Infosys Software Programming Certification</h4>
+            <p>Professional certification in software development</p>
+          </div>
+
+          <div class="achievement-item">
+            <h4>State Merit Scholarship</h4>
+            <p>
+              Recipient of academic excellence scholarship from Andhra Pradesh
+              State Government, India
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
