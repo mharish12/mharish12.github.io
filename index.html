@@ -3,9 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Harish Madineni — Senior Backend Engineer specializing in scalable microservices, distributed systems, and AI-powered automation."
+    />
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <title>Harish Madineni - Resume</title>
+    <title>Harish Madineni — Senior Backend Engineer</title>
     <style>
       * {
         margin: 0;
@@ -20,30 +24,49 @@
         max-width: 1000px;
         margin: 0 auto;
         padding: 20px;
-        background-color: #f5f5f5;
+        background-color: #f0f4f8;
       }
 
       .resume {
         background-color: white;
         padding: 40px;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
       }
 
       .header {
         text-align: center;
         margin-bottom: 30px;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #e8edf2;
       }
 
       .header h1 {
-        color: #2c3e50;
-        font-size: 2.5em;
-        margin-bottom: 10px;
+        color: #1a2b3c;
+        font-size: 2.4em;
+        margin-bottom: 6px;
+        letter-spacing: -0.5px;
+      }
+
+      .subtitle {
+        color: #3498db;
+        font-size: 1.1em;
+        font-weight: 600;
+        margin-bottom: 14px;
       }
 
       .contact-info {
-        color: #666;
-        margin-bottom: 20px;
+        color: #5a6a7a;
+        font-size: 0.95em;
+      }
+
+      .contact-info a {
+        color: #2980b9;
+        text-decoration: none;
+      }
+
+      .contact-info a:hover {
+        text-decoration: underline;
       }
 
       .section {
@@ -51,43 +74,109 @@
       }
 
       .section-title {
-        color: #2c3e50;
+        color: #1a2b3c;
         border-bottom: 2px solid #3498db;
-        padding-bottom: 10px;
-        margin-bottom: 15px;
+        padding-bottom: 8px;
+        margin-bottom: 16px;
+        font-size: 1.25em;
+        letter-spacing: 0.3px;
+      }
+
+      .summary p {
+        color: #444;
+        margin-bottom: 10px;
       }
 
       .experience-item,
       .education-item {
-        margin-bottom: 20px;
+        margin-bottom: 24px;
       }
 
       .experience-item h3,
       .education-item h3 {
-        color: #2c3e50;
+        color: #1a2b3c;
+        font-size: 1.05em;
+      }
+
+      .company {
+        color: #3498db;
+        font-weight: 600;
       }
 
       .date {
-        color: #666;
+        color: #7f8c9a;
         font-style: italic;
+        font-size: 0.9em;
+        margin-bottom: 8px;
+      }
+
+      .experience-item ul {
+        padding-left: 20px;
+      }
+
+      .experience-item li {
+        margin-bottom: 6px;
+        color: #444;
+      }
+
+      .skills-grid {
+        display: grid;
+        gap: 4px;
+      }
+
+      .skill-category {
+        margin-bottom: 18px;
+      }
+
+      .skill-category h4 {
+        color: #2c3e50;
+        font-size: 0.9em;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 8px;
       }
 
       .skills-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 8px;
       }
 
       .skill {
         background-color: #3498db;
         color: white;
-        padding: 5px 15px;
-        border-radius: 15px;
+        padding: 4px 14px;
+        border-radius: 20px;
+        font-size: 0.85em;
+      }
+
+      .skill.ai {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+      }
+
+      .project-item {
+        margin-bottom: 16px;
+      }
+
+      .project-item h4 {
+        color: #1a2b3c;
+        margin-bottom: 4px;
+      }
+
+      .project-item p {
+        color: #555;
+        font-size: 0.95em;
+      }
+
+      .project-link {
+        color: #2980b9;
+        font-weight: 500;
+        text-decoration: none;
         font-size: 0.9em;
       }
 
-      .skill-category {
-        margin-bottom: 20px;
+      .project-link:hover {
+        text-decoration: underline;
       }
 
       @media (max-width: 768px) {
@@ -98,6 +187,33 @@
         .resume {
           padding: 20px;
         }
+
+        .header h1 {
+          font-size: 1.8em;
+        }
+      }
+
+      @media print {
+        body {
+          background: white;
+          padding: 0;
+        }
+
+        .resume {
+          box-shadow: none;
+          padding: 0;
+        }
+
+        .skill {
+          border: 1px solid #3498db;
+          background: white;
+          color: #3498db;
+        }
+
+        .skill.ai {
+          border-color: #764ba2;
+          color: #764ba2;
+        }
       }
     </style>
   </head>
@@ -105,265 +221,343 @@
     <div class="resume">
       <div class="header">
         <h1>Harish Madineni</h1>
+        <p class="subtitle">Senior Backend Engineer / Java Developer</p>
         <div class="contact-info">
           <p>
-            📍 Bengaluru, India | 📧
+            📍 Bangalore, India &nbsp;|&nbsp; 📧
             <a href="mailto:harishmadineni1@gmail.com"
               >harishmadineni1@gmail.com</a
             >
-            | 📱 <a href="tel:+918106889667">+918106889667</a> | 💼
+            &nbsp;|&nbsp; 📱
+            <a href="tel:+918106889667">+91 8106889667</a>
+            &nbsp;|&nbsp; 🔗
             <a href="https://www.linkedin.com/in/mharish12/">LinkedIn</a>
           </p>
         </div>
       </div>
 
-      <div class="section">
+      <div class="section summary">
         <h2 class="section-title">Professional Summary</h2>
         <p>
-          Results-oriented Java Developer with 3.5+ years of experience in
-          backend development. Skilled in designing, implementing, and
-          maintaining Java applications, with a strong focus on scalability,
-          performance, and reliability. Proficient in various Java frameworks
-          and technologies, including Spring Boot, Hibernate, Apache Storm,
-          Maven and Gradle. Adept at collaborating with cross-functional teams
-          to deliver high-quality software solutions.
+          Senior Backend Engineer with 4+ years of experience designing and
+          building scalable microservices, distributed systems, and event-driven
+          architectures.
+        </p>
+        <p>
+          Proven track record of delivering high-performance, reliable solutions
+          for high-volume business operations using Java, Spring Boot, Kafka,
+          Kubernetes, cloud-native technologies, and AI-powered automation.
+        </p>
+        <p>
+          Skilled in translating business requirements into scalable technical
+          solutions, driving architectural decisions, improving operational
+          efficiency, and collaborating across teams to deliver impactful
+          products.
+        </p>
+        <p>
+          Passionate about building maintainable systems, mentoring engineers,
+          and leveraging emerging technologies to solve complex business
+          problems.
         </p>
       </div>
 
       <div class="section">
-        <h2 class="section-title">Work Experience</h2>
+        <h2 class="section-title">Experience</h2>
+
+        <div class="experience-item">
+          <h3>Senior Software Engineer (SDE-2)</h3>
+          <p class="date">
+            <span class="company">Birla Pivot</span> &nbsp;|&nbsp; July 2025 –
+            Present
+          </p>
+          <ul>
+            <li>
+              Built and productized a configurable Rule Engine (SaaS platform)
+              adopted across multiple business entities using a custom DSL and
+              AI-powered natural language interface.
+            </li>
+            <li>
+              Enabled business users to create decisioning, scoring, and
+              validation rules, significantly reducing engineering dependency.
+            </li>
+            <li>
+              Designed and implemented AI-powered document processing and agentic
+              workflows integrated with event-driven microservices.
+            </li>
+            <li>
+              Automated extraction, summarization, and transformation of
+              unstructured documents into structured business data.
+            </li>
+            <li>
+              Improved pricing accuracy and reduced manual effort through
+              intelligent automation.
+            </li>
+            <li>
+              Led backend architecture and technical design initiatives for
+              Java-based distributed microservices.
+            </li>
+            <li>
+              Drove scalability, maintainability, extensibility, and reliability
+              across high-volume transaction systems.
+            </li>
+            <li>
+              Contributed to platform engineering through CI/CD automation,
+              Infrastructure as Code, observability, distributed tracing, and
+              Kafka-based event-driven architecture.
+            </li>
+            <li>
+              Improved deployment reliability, monitoring, and operational
+              excellence.
+            </li>
+          </ul>
+        </div>
+
         <div class="experience-item">
           <h3>Software Engineer</h3>
-          <p class="date">Birla Pivot | July, 2024 - Present</p>
+          <p class="date">
+            <span class="company">Birla Pivot</span> &nbsp;|&nbsp; July 2024 –
+            July 2025
+          </p>
           <ul>
             <li>
-              Developed Logistics RFQ (Request for Quotation) workflows,
-              automating vendor selection, price negotiation, and quotation
-              tracking to streamline logistics operations.
+              Led end-to-end architecture and development of Logistics RFQ and
+              Sales Pipeline platforms.
             </li>
             <li>
-              Designed and implemented Sales Pipeline features, increasing lead
-              conversion rate by 60% and reducing sales cycle time by 50%.
+              Implemented vendor negotiation and quotation tracking workflows.
             </li>
             <li>
-              Architected and developed 5+ microservices using Java and Spring
-              Boot, resulting in 40% faster deployment cycles and improved
-              system maintainability.
+              Improved lead conversion by <strong>60%</strong> and reduced sales
+              cycle time by <strong>50%</strong>.
             </li>
             <li>
-              Optimized backend performance through code refactoring and caching
-              strategies, reducing API response times from 800ms to 120ms (85%
-              improvement).
+              Designed scalable REST APIs consumed by React frontends.
             </li>
             <li>
-              Implemented Spring State Machine for product lifecycle management,
-              reducing state transition errors by 95% and improving system
-              reliability.
+              Architected high-throughput event-driven microservices using Java,
+              Spring Boot, and Spring State Machine.
             </li>
             <li>
-              Designed and optimized database schemas for critical services,
-              achieving 99.9% uptime and reducing query latency by 60%.
+              Processed <strong>10,000+ events/sec</strong> with
+              <strong>99.99% reliability</strong>.
             </li>
             <li>
-              Worked on AWS services, RDS, EKS, Jaeger and Kibana, Jenkins.
+              Optimized database schemas, caching strategies, and query
+              performance.
             </li>
             <li>
-              Collaborated with cross-functional teams to enhance e-commerce
-              platform features.
+              Reduced API latency from <strong>800ms to 120ms</strong>
+              (<strong>85% improvement</strong>).
             </li>
             <li>
-              Resolved production issues quickly, ensuring minimal downtime and
-              smooth operations.
+              Decreased state transition errors by <strong>99.99%</strong>.
             </li>
             <li>
-              Implemented event-driven architecture using Kafka, processing
-              10,000+ events per second with 99.99% reliability.
+              Improved platform reliability through observability using Jaeger,
+              Kibana, and Prometheus — achieving <strong>99.9% uptime</strong>.
             </li>
             <li>
-              Monitored and debugged distributed systems using Jaeger and
-              Kibana, enhancing observability and troubleshooting.
-            </li>
-            <li>
-              Developed and documented REST APIs with comprehensive Swagger
-              documentation, improving developer onboarding time by 40%.
-            </li>
-            <li>
-              Integrated REST APIs with React frontend for real-time data
-              updates.
-            </li>
-            <li>
-              Mentored junior developers, guiding them in best practices for
-              coding, architecture, and system design.
+              Mentored engineers on Clean Architecture, System Design, and
+              Performance Optimization.
             </li>
           </ul>
         </div>
+
         <div class="experience-item">
           <h3>Senior Software Development Engineer</h3>
-          <p class="date">Zopsmart | April, 2024 - July, 2024</p>
+          <p class="date">
+            <span class="company">Zopsmart</span> &nbsp;|&nbsp; April 2024 –
+            July 2024
+          </p>
           <ul>
             <li>
-              Led a team of 8 developers, delivering 3 major features ahead of
-              schedule with 95% test coverage and zero critical bugs.
+              Led a team of <strong>8 engineers</strong> to deliver
+              <strong>3 major distributed system features</strong> ahead of
+              schedule.
             </li>
             <li>
-              Architected and implemented Apache Storm Orchestrator pipeline
-              processing 100M+ records daily with 99.99% uptime.
+              Achieved <strong>95% test coverage</strong> with
+              <strong>zero critical production defects</strong>.
             </li>
             <li>
-              Implemented critical code changes and added new functionalities to
-              enhance the existing applications, ensuring the reliability and
-              robustness of the applications.
+              Worked directly with clients to translate business requirements
+              into scalable technical solutions.
             </li>
             <li>
-              Conducted bi-weekly client meetings, translating business
-              requirements into technical specifications with 100% stakeholder
-              satisfaction.
+              Architected and implemented an Apache Storm-based orchestration
+              pipeline processing <strong>100M+ records daily</strong> with
+              <strong>99.99% uptime</strong>.
+            </li>
+            <li>
+              Enhanced reliability and enabled high-volume distributed data
+              processing.
             </li>
           </ul>
         </div>
+
         <div class="experience-item">
-          <h3>Software Development Engineer Level - 2</h3>
-          <p class="date">Zopsmart | September, 2022 - April, 2024</p>
+          <h3>Software Development Engineer – 2</h3>
+          <p class="date">
+            <span class="company">Zopsmart</span> &nbsp;|&nbsp; September 2022 –
+            April 2024
+          </p>
           <ul>
             <li>
-              Achieved Employee of the Month (December 2022) for exceptional
-              performance in system optimization and team leadership.
+              Led a team of <strong>7 engineers</strong> delivering
+              high-availability retail platform features for Kroger.
             </li>
             <li>
-              Led a team of 7 developers in retail environment (Kroger),
-              delivering major releases with 99.9% uptime and zero critical
-              incidents.
+              Ensured <strong>99.9% uptime</strong> and zero critical production
+              incidents across multiple releases.
             </li>
             <li>
-              Implemented Domain Driven Architecture processing 10M+ records
-              daily from Azure Eventhubs, improving data consistency by 99.9%.
+              Designed domain-driven distributed architecture processing
+              <strong>10M+ events daily</strong> from Azure Event Hubs.
             </li>
             <li>
-              Leveraged Apache Storm Orchestrator, YugaByte Cassandra, Circuit
-              Breaker, RESTful web services, Apache Kafka, Prometheus, K8s
-              technologies.
+              Improved data consistency by <strong>99.9%</strong> using Kafka,
+              Yugabyte, Cassandra, Circuit Breaker patterns, and REST APIs.
             </li>
             <li>
-              Responsibilities includes Identifying and addressing areas of
-              improvement in code quality and performance and worked in an Agile
-              development environment, Production support, Bug fixes, Code
-              reviews, contributing to sprint planning, daily scrums, and
-              retrospective meetings.
+              Improved system performance through code optimization, production
+              issue resolution, and scalability enhancements.
+            </li>
+            <li>
+              Utilized Apache Storm, Kubernetes, and Prometheus.
+            </li>
+            <li>
+              Received <strong>Employee of the Month (December 2022)</strong>.
             </li>
           </ul>
         </div>
+
         <div class="experience-item">
           <h3>Software Development Engineer</h3>
-          <p class="date">Zopsmart | FEBRUARY, 2022 - September, 2022</p>
+          <p class="date">
+            <span class="company">Zopsmart</span> &nbsp;|&nbsp; February 2022 –
+            September 2022
+          </p>
           <ul>
             <li>
-              Developed Rocket Java framework reducing development time by 50%
-              through pre-configured best practices and reusable components.
-              Feature include Centralized Logging, Authorization and
-              Authentication, Constraint Validations, Dependency Injection,
-              Parameter validations, Configurations, Prometheus Metrics, and
-              CRUD operations for Google Cloud file uploads.
+              Designed and developed the Rocket Java Framework with reusable
+              components for Authentication, Validation, Logging, Configuration,
+              Prometheus Metrics, and Cloud File Operations.
             </li>
             <li>
-              Achieved 95% code coverage with hundreds of unit test cases,
-              reducing production bugs by 90% and improving system reliability.
+              Reduced development effort by <strong>50%</strong>.
             </li>
             <li>
-              Reduced deployment time by 70% through implementation of automated
-              semantic versioning and release pipelines.
+              Increased framework adoption by <strong>200%</strong> through
+              documentation and developer enablement.
             </li>
             <li>
-              Improved framework adoption rate by 200% through comprehensive
-              documentation and developer training sessions.
+              Achieved <strong>95% unit test coverage</strong>, reducing
+              production defects by <strong>90%</strong>.
+            </li>
+            <li>
+              Implemented automated semantic versioning and CI/CD pipelines,
+              reducing deployment time by <strong>70%</strong>.
             </li>
           </ul>
         </div>
       </div>
 
       <div class="section">
-        <h2 class="section-title">Education</h2>
-        <div class="education-item">
-          <h3>BACHELOR OF TECHNOLOGY IN COMPUTER SCIENCE AND ENGINEERING</h3>
-          <p class="date">
-            SREE VIDYANIKETHAN ENGINEERING COLLEGE | 2018 - 2022
-          </p>
-          <p>CGPA: 8.12</p>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title">Core Skills</h2>
         <div class="skills-grid">
           <div class="skill-category">
             <h4>Languages</h4>
             <div class="skills-list">
               <span class="skill">Java</span>
               <span class="skill">Python</span>
-              <span class="skill">Go Lang</span>
               <span class="skill">C</span>
               <span class="skill">C++</span>
             </div>
           </div>
           <div class="skill-category">
-            <h4>Databases</h4>
+            <h4>Backend &amp; Frameworks</h4>
             <div class="skills-list">
-              <span class="skill">Cassandra</span>
-              <span class="skill">Postgres</span>
-              <span class="skill">MySQL</span>
+              <span class="skill">Spring Boot</span>
+              <span class="skill">Hibernate</span>
+              <span class="skill">REST APIs</span>
+              <span class="skill">Spring State Machine</span>
             </div>
           </div>
           <div class="skill-category">
-            <h4>Cloud Platforms</h4>
+            <h4>Distributed Systems</h4>
             <div class="skills-list">
-              <span class="skill">Azure</span>
-              <span class="skill">AWS</span>
-              <span class="skill">GCP</span>
-            </div>
-          </div>
-          <div class="skill-category">
-            <h4>Tools & Technologies</h4>
-            <div class="skills-list">
+              <span class="skill">Kafka</span>
+              <span class="skill">Redis</span>
               <span class="skill">Apache Storm</span>
-              <span class="skill">Apache Kafka</span>
               <span class="skill">Apache Spark</span>
               <span class="skill">Apache Flink</span>
-              <span class="skill">Databricks</span>
-              <span class="skill">Prometheus</span>
-              <span class="skill">DropWizard</span>
-              <span class="skill">Kubernetes</span>
-              <span class="skill">Docker</span>
-              <span class="skill">Spring</span>
-              <span class="skill">Spring-Boot</span>
-              <span class="skill">Circuit-Breaker</span>
-              <span class="skill">Grafana</span>
-              <span class="skill">Dynatrace</span>
-              <span class="skill">Harness</span>
-              <span class="skill">Rancher</span>
-              <span class="skill">Snyk</span>
-              <span class="skill">Datalake</span>
-              <span class="skill">Datadog</span>
-              <span class="skill">Jfrog</span>
-              <span class="skill">Terraform</span>
-              <span class="skill">Sonar</span>
-              <span class="skill">Gradle</span>
-              <span class="skill">Maven</span>
-              <span class="skill">IntelliJ</span>
-              <span class="skill">Git</span>
-              <span class="skill">Jira</span>
-              <span class="skill">Service-Now</span>
             </div>
           </div>
           <div class="skill-category">
-            <h4>Test Automation Tools</h4>
+            <h4>Cloud &amp; DevOps</h4>
             <div class="skills-list">
-              <span class="skill">Karate Framework</span>
+              <span class="skill">AWS (RDS, EKS)</span>
+              <span class="skill">Azure</span>
+              <span class="skill">GCP</span>
+              <span class="skill">Kubernetes</span>
+              <span class="skill">Docker</span>
+              <span class="skill">Terraform</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Databases</h4>
+            <div class="skills-list">
+              <span class="skill">PostgreSQL</span>
+              <span class="skill">MySQL</span>
+              <span class="skill">Cassandra</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Observability &amp; Monitoring</h4>
+            <div class="skills-list">
+              <span class="skill">Prometheus</span>
+              <span class="skill">Grafana</span>
+              <span class="skill">Kibana</span>
+              <span class="skill">Jaeger</span>
+              <span class="skill">Datadog</span>
+              <span class="skill">Lighthouse</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>AI &amp; Emerging Technologies</h4>
+            <div class="skills-list">
+              <span class="skill ai">LangChain</span>
+              <span class="skill ai">LangGraph</span>
+              <span class="skill ai">Deep Agents</span>
+              <span class="skill ai">Agentic Workflows</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>CI/CD &amp; Build Tools</h4>
+            <div class="skills-list">
+              <span class="skill">Jenkins</span>
+              <span class="skill">Harness</span>
+              <span class="skill">Maven</span>
+              <span class="skill">Gradle</span>
             </div>
           </div>
         </div>
       </div>
 
       <div class="section">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+          <h3>Bachelor of Technology (B.Tech) — Computer Science and Engineering</h3>
+          <p class="date">
+            Sree Vidyanikethan Engineering College, Andhra Pradesh, India
+            &nbsp;|&nbsp; 2018 – 2022
+          </p>
+          <p>CGPA: 8.12/10</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <h2 class="section-title">Personal Projects</h2>
         <div class="project-category">
           <div class="project-item">
             <h4>
@@ -371,23 +565,23 @@
               <a
                 href="https://github.com/mharish12/local-chat"
                 class="project-link"
-                >View Project
-              </a>
+                >View Project</a
+              >
             </h4>
             <p>
               A real-time chat application built with WebSocket technology
-              enabling instant messaging between users on local network.
+              enabling instant messaging between users on a local network.
             </p>
           </div>
 
           <div class="project-item">
             <h4>
-              Parking Lot Management System |
+              Parking Lot Application |
               <a
                 href="https://github.com/hqtechnology/parking-lot-application"
                 class="project-link"
-                >View Project
-              </a>
+                >View Project</a
+              >
             </h4>
             <p>
               A comprehensive parking management solution with real-time space
@@ -399,23 +593,23 @@
             <h4>
               Java Opinionated Framework |
               <a href="https://github.com/mharish12/hqueue" class="project-link"
-                >View Project
-              </a>
+                >View Project</a
+              >
             </h4>
             <p>
               A custom framework designed to streamline Java development with
-              pre-configured best practices and patterns.
+              pre-configured best practices and reusable components.
             </p>
           </div>
 
           <div class="project-item">
             <h4>
-              E-Commerce Platform |
+              E-Commerce Application |
               <a
                 href="https://github.com/mharish12/spring-prac"
                 class="project-link"
-                >View Project
-              </a>
+                >View Project</a
+              >
             </h4>
             <p>
               Full-featured e-commerce solution with RESTful API endpoints for
@@ -425,81 +619,16 @@
 
           <div class="project-item">
             <h4>
-              Pothole Detection System |
+              Pothole Detection Using Machine Learning Techniques |
               <a
                 href="https://ieeexplore.ieee.org/document/10010929"
                 class="project-link"
-                >View Project
-              </a>
+                >View Project</a
+              >
             </h4>
             <p>
               Machine learning-based solution for automated pothole detection
               using computer vision techniques on digital camera inputs.
-            </p>
-          </div>
-
-          <div class="project-item">
-            <h4>
-              Sales Forecasting Model |
-              <a
-                href="https://github.com/mharish12/django_web_app"
-                class="project-link"
-                >View Project
-              </a>
-            </h4>
-            <p>
-              Django-based predictive analytics application utilizing logistic
-              regression for employee behavior analysis and sales forecasting.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="section">
-        <h2 class="section-title">Achievements & Certifications</h2>
-        <div class="experience-item">
-          <div class="achievement-item">
-            <h4>Logistics Feature Delivery Excellence</h4>
-            <p>
-              Recognized for ownership mindset and rapid delivery of critical
-              logistics functionality
-            </p>
-          </div>
-
-          <div class="achievement-item">
-            <h4>Pivot Polaris Performance Award</h4>
-            <p>
-              Honored for exceptional project execution and requirement analysis
-              (December 2022)
-            </p>
-          </div>
-
-          <div class="achievement-item">
-            <h4>EPAM Java Development Certification</h4>
-            <p>
-              Completed comprehensive Java development program (September 2020 -
-              June 2021)
-            </p>
-          </div>
-
-          <div class="achievement-item">
-            <h4>IEEE Research Publication</h4>
-            <p>
-              Published research paper on machine learning applications in
-              pothole detection
-            </p>
-          </div>
-
-          <div class="achievement-item">
-            <h4>Infosys Software Programming Certification</h4>
-            <p>Professional certification in software development</p>
-          </div>
-
-          <div class="achievement-item">
-            <h4>State Merit Scholarship</h4>
-            <p>
-              Recipient of academic excellence scholarship from Andhra Pradesh
-              State Government, India
             </p>
           </div>
         </div>
